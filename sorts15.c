@@ -295,7 +295,7 @@ void Bubble_sort(Element_Type A[], int N)
 {
     Element_Type tmp;
     for (int i = 0; i < N - 1; i++)
-        for (int j = i + 1; j < N; j++)
+        for (int j = 0; j < N-1-i; j++)
             if (A[j - 1] > A[j])
             {
                 tmp = A[j - 1];
